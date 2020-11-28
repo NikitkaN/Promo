@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Slab:wght@100&family=Source+Code+Pro:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+body {
+  background-color: #121212;
+}
+.middle {
+  transform: translate(-50%, 0px);
+  left: 50%;
+}
+header {
+  position: fixed;
+  width: 40%;
+  background-color: #0a0a0a;
+  height: 7%;
+  border-radius: 0px 0px 50px 50px;
+  z-index: 4;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 2.5% 10%;
+  list-style-type: none;
+}
+.head {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  font-size: 1.02vw;
+  color: #ffd700;
+
+  background: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+.head:hover {
+  background-size: 100% 2px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100% 40% 5%;
+  grid-gap: 1%;
+  grid-template-areas:
+    "1"
+    "2"
+    "3";
+}
+.elem_1 {
+  grid-area: 1;
+}
+.elem_2 {
+  grid-area: 2;
+}
+.elem_3 {
+  grid-area: 3;
+}
+#slides {
+  position: relative;
+  height: 100vh;
+}
+#slides .round,
+#slides h1,
+#slides h2,
+#slides h3,
+#slides .strelka-bottom {
+  position: absolute;
+  color: white;
+  z-index: 2;
+  font-family: "Lora", serif;
+}
+#slides .round {
+  width: 15%;
+  height: 28%;
+  border: 5px solid #ffd700;
+  border-radius: 50%;
+  overflow: hidden;
+  top: 10.5%;
+  background: #ffd700;
+}
+.round img {
+  width: 100%;
+  height: 100%;
+}
+#slides h1 {
+  font-size: 4.5vw;
+  top: 42%;
+}
+#slides h2 {
+  font-size: 2.2vw;
+  top: 52.5%;
+}
+#slides h3 {
+  font-size: 1.5vw;
+  top: 82%;
+}
+.strelka-bottom {
+  /*width: 80px;
+  height: 80px;*/
+  width: 6%;
+  height: 6%;
+  cursor: pointer;
+  fill: white;
+  transition: fill 0.5s ease-in-out /*, transform 0.3s ease-in*/;
+  top: 86.5%;
+}
+.strelka-bottom:hover {
+  fill: #ffd700;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  background-size: cover;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+.slide:nth-of-type(1) {
+  background-image: url("img/slide_1.png");
+}
+.slide:nth-of-type(2) {
+  background-image: url("img/slide_2.png");
+}
+.slide:nth-of-type(3) {
+  background-image: url("img/slide_3.jpg");
+}
+.elem_2 h1 {
+  position: absolute;
+  color: #ffd700;
+  /*font-family: "Open Sans", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-family: "Source Code Pro", monospace;*/
+  font-family: "Lora", serif;
+  /*margin-top: 1%;*/
+}
+.trait {
+  position: absolute;
+  height: 0.5vh;
+  width: 20vw;
+  display: block;
+  background-color: white;
+  margin: 1em auto 1em;
+  margin-top: 4%;
+  /*border-radius: 1000% 1000% 1000% 1000%;*/
+}
+.text .middle {
+  position: absolute;
+  font-size: 1vw;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  margin-top: 6%;
+  margin-bottom: 3.2px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.inf .ins {
+  position: absolute;
+  margin-top: 8%;
+}
+.text .attention {
+  position: absolute;
+  margin-top: 12%;
+  background-color: #222222 /*#ff8c00*/ /*#b80000*/;
+  padding: 1.2%;
+  border-radius: 35px;
+}
+.attention .att {
+  color: red;
+  font-size: 125%;
+}
+footer {
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 10%;
+  font-size: 1.6vh;
+  color: #ffd700;
+  font-family: "Open Sans", sans-serif;
+}
+.href .VK,
+.href .Git,
+.href .Telegramm {
+  width: 6%;
+  height: auto;
+  float: right;
+}
+.VK,
+.Telegramm {
+  margin-right: 2%;
+}

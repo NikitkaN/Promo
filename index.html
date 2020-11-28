@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Николаев Никита</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header class="middle">
+      <ul>
+        <li><a href="#" class="head">Главная</a></li>
+        <li><a href="#" class="head">О себе</a></li>
+        <li><a href="#" class="head">Навыки и портфолио</a></li>
+        <li><a href="#" class="head">Контакты</a></li>
+      </ul>
+    </header>
+    <main class="grid">
+      <div class="elem_1">
+        <ul id="slides">
+          <li class="slide showing"></li>
+          <li class="slide"></li>
+          <li class="slide"></li>
+          <div class="round middle"><img src="img/Me.png" alt="Me"></div>
+          <h1 class="middle">Никита Николаев</h1>
+          <h2 class="middle">- Frontend-разработчик -</h2>
+          <h3 class="middle">Цель сайта</h3>
+          <svg class="strelka-bottom middle" viewBox="0 0 154 109">
+            <symbol id="strelka" viewBox="-73.9 -55.3 135.9 85.4">
+              <g>
+                <polygon points="-73.9,29.1 -6,-9.2 61.9,30.1 61.9,14.2 -6,-25.1 -73.9,14.2 "></polygon>
+              </g>
+              <g>
+                <polygon points="-73.9,-1 -6,-39.3 61.9,0 61.9,-16 -6,-55.3 -73.9,-16 "></polygon>
+              </g>
+            </symbol>
+            <use xlink:href="#strelka" width="135.9" height="85.4" id="XMLID_1_" x="-73.9" y="-55.3"
+              transform="matrix(1.007 0 0 -1.007 83.0005 42)"></use>
+            <a href="#pump"></a>
+          </svg>
+        </ul>
+      </div>
+      <div class="elem_2">
+        <h1 class="middle">Почему существует этот сайт</h1>
+        <div class="trait middle"></div>
+        <div class="text">
+          <div class="inf">
+          <p class="middle">На данный момент, сайт создан в целях перехода на второй этап городского IT-кросса «BitEducation».</p>
+          <p class="ins middle">Узнать подробности вы можете перейдя по этой <a href="http://education.simcat.ru/school31/news/1708/" class="head">ссылке</a></p>
+          </div>
+          <div class="attention middle">
+            <p class="att">Внимание!</p>
+            <p>На сайте не работает отправка форм! Перед вами лишь вёрстка, с щепоткой JavaScript.</p>
+          </div>
+        </div>
+      </div>
+      <footer class="elem_3">
+        <p class="name">©2020 Никита Николаев</p>
+        <div class="href">
+          <a href="#"><img class="Git" src="img/github-brands.svg"></a>
+          <a href="#"><img class="Telegramm" src="img/telegram-brands.svg"></a>
+          <a href="#"><img class="VK" src="img/vk-brands.svg"></a>
+        </div>
+      </footer>
+    </main>
+    <script>
+      let slides = document.querySelectorAll('#slides .slide');
+      let currentSlide = 0;
+      let slideInterval = setInterval(nextSlide, 4000);
+
+      function nextSlide() {
+          slides[currentSlide].className = 'slide';
+          currentSlide = (currentSlide + 1) % slides.length;
+          slides[currentSlide].className = 'slide showing';
+      }
+    </script>
+  </body>
+</html>
