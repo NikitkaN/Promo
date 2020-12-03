@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap");
-/*@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Slab:wght@100&family=Source+Code+Pro:wght@300&display=swap");
 * {
@@ -13,6 +12,7 @@
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #121212;
@@ -24,7 +24,7 @@ body {
 header {
   position: fixed;
   width: 40%;
-  background-color: #0a0a0a;
+  background-color: #121212;
   height: 7%;
   border-radius: 0px 0px 50px 50px;
   z-index: 4;
@@ -81,13 +81,13 @@ header ul {
 #slides h3,
 #slides .strelka-bottom {
   position: absolute;
-  color: white;
+  color: #fffafa;
   z-index: 2;
   font-family: "Lora", serif;
 }
 #slides .round {
-  width: 15%;
-  height: 28%;
+  width: 15vw;
+  height: 15vw;
   border: 5px solid #ffd700;
   border-radius: 50%;
   overflow: hidden;
@@ -111,13 +111,11 @@ header ul {
   top: 82%;
 }
 .strelka-bottom {
-  /*width: 80px;
-  height: 80px;*/
   width: 6%;
   height: 6%;
   cursor: pointer;
   fill: white;
-  transition: fill 0.5s ease-in-out /*, transform 0.3s ease-in*/;
+  transition: fill 0.5s ease-in-out;
   top: 86.5%;
 }
 .strelka-bottom:hover {
@@ -135,29 +133,25 @@ header ul {
   transition: opacity 1s;
   background-size: cover;
   object-fit: cover;
-  filter: brightness(50%);
+  filter: brightness(60%);
 }
 .showing {
   opacity: 1;
   z-index: 2;
 }
 .slide:nth-of-type(1) {
-  background-image: url("img/slide_1.png");
+  background-image: url("../img/slide_1.png");
 }
 .slide:nth-of-type(2) {
-  background-image: url("img/slide_2.png");
+  background-image: url("../img/slide_2.png");
 }
 .slide:nth-of-type(3) {
-  background-image: url("img/slide_3.jpg");
+  background-image: url("../img/slide_3.jpg");
 }
 .elem_2 h1 {
   position: absolute;
   color: #ffd700;
-  /*font-family: "Open Sans", sans-serif;
-  font-family: "Roboto Slab", serif;
-  font-family: "Source Code Pro", monospace;*/
   font-family: "Lora", serif;
-  /*margin-top: 1%;*/
 }
 .trait {
   position: absolute;
@@ -167,7 +161,6 @@ header ul {
   background-color: white;
   margin: 1em auto 1em;
   margin-top: 4%;
-  /*border-radius: 1000% 1000% 1000% 1000%;*/
 }
 .text .middle {
   position: absolute;
@@ -186,16 +179,16 @@ header ul {
 .text .attention {
   position: absolute;
   margin-top: 12%;
-  background-color: #222222 /*#ff8c00*/ /*#b80000*/;
+  background-color: #222222;
   padding: 1.2%;
   border-radius: 35px;
 }
-.attention .att {
+.att {
   color: red;
   font-size: 125%;
 }
 footer {
-  background-color: #222222;
+  background-color: #1b1b1b;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -204,14 +197,16 @@ footer {
   color: #ffd700;
   font-family: "Open Sans", sans-serif;
 }
-.href .VK,
-.href .Git,
-.href .Telegramm {
-  width: 6%;
-  height: auto;
-  float: right;
+.links {
+  display: flex;
+  align-items: center;
 }
-.VK,
-.Telegramm {
-  margin-right: 2%;
+.link {
+  font-size: 1.25vw;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+.link:not(:last-child) {
+  margin-right: 25%;
 }
