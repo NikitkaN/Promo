@@ -181,3 +181,82 @@ footer {
 .link:not(:last-child) {
   margin-right: 25%;
 }
+@media (max-width: 1440px) {
+  header {
+    width: 50%;
+  }
+  .head {
+    font-size: 1.25vw;
+  }
+  .elem_2 {
+    margin-top: 40%;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    width: 60%;
+  }
+  .head {
+    font-size: 1.7vw;
+  }
+  h1 {
+    font-size: 3.4vw;
+  }
+  .elem_1 {
+    transform: scale(1.6);
+    left: 35.25%;
+  }
+  .trait {
+    top: 15%;
+  }
+  .link {
+    font-size: 2vw;
+  }
+  .elem_2 {
+    margin-top: 40%;
+  }
+  h2 {
+    font-size: 2.5vw;
+  }
+  img {
+    margin-top: 48%;
+    width: 35vw;
+  }
+  img:hover {
+    width: 36.5vw;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    width: 80%;
+  }
+  .head {
+    font-size: 2.3vw;
+  }
+  h1 {
+    font-size: 3.4vw;
+  }
+  .elem_1 {
+    transform: scale(2);
+    left: 34.25%;
+  }
+  .trait {
+    top: 14%;
+  }
+  .link {
+    font-size: 3vw;
+  }
+  .elem_2 {
+    margin-top: 60%;
+  }
+  h2 {
+    font-size: 3vw;
+  }
+  img {
+    margin-top: 48%;
+    width: 35vw;
+  }
+  img:hover {
+    width: 36.5vw;
+  }
+}

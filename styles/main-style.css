@@ -152,6 +152,7 @@ header ul {
   position: absolute;
   color: #ffd700;
   font-family: "Lora", serif;
+  font-size: 1.8vw;
 }
 .trait {
   position: absolute;
@@ -209,4 +210,138 @@ footer {
 }
 .link:not(:last-child) {
   margin-right: 25%;
+}
+@media (max-width: 1440px) {
+  header {
+    width: 50%;
+  }
+  .head {
+    font-size: 1.25vw;
+  }
+  #slides .round {
+    width: 17vw;
+    height: 17vw;
+  }
+  #slides h3 {
+    font-size: 1.7vw;
+  }
+  .elem_2 h1 {
+    font-size: 2.1vw;
+  }
+  .text .middle {
+    font-size: 1.2vw;
+  }
+  .text .attention {
+    padding: 1.55%;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    width: 60%;
+  }
+  .head {
+    font-size: 1.7vw;
+  }
+  #slides .round {
+    width: 24vw;
+    height: 24vw;
+  }
+  #slides h1 {
+    font-size: 5.65vw;
+  }
+  #slides h2 {
+    font-size: 3.2vw;
+  }
+  #slides h3 {
+    font-size: 2.5vw;
+  }
+  .elem_2 h1 {
+    font-size: 2.8vw;
+  }
+  .trait {
+    margin-top: 5%;
+  }
+  .text .middle {
+    font-size: 1.52vw;
+  }
+  .inf .inc {
+    margin-top: 8%;
+  }
+  .inf .ins {
+    margin-top: 11%;
+  }
+  .text .attention {
+    padding: 1.85%;
+    margin-top: 16.5%;
+  }
+  footer {
+    margin-top: -1%;
+  }
+  .link {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    width: 80%;
+  }
+  .head {
+    font-size: 2.3vw;
+  }
+  #slides .round {
+    width: 30vw;
+    height: 30vw;
+    margin-top: 5%;
+  }
+  #slides h1 {
+    font-size: 7vw;
+    margin-top: 1%;
+    transform: translate(-25%, 0px);
+    left: 35%;
+  }
+  #slides h2 {
+    font-size: 3.5vw;
+    margin-top: -2%;
+    transform: translate(-60%, 0px);
+    left: 55%;
+  }
+  #slides h3 {
+    font-size: 3.5vw;
+  }
+  .strelka-bottom {
+    width: 8.5%;
+    height: 8.5%;
+  }
+  .elem_2 h1 {
+    font-size: 3.5vw;
+    transform: translate(-20%, 0px);
+    left: 35%;
+  }
+  .trait {
+    margin-top: 6%;
+    width: 30vw;
+  }
+  .text .middle {
+    font-size: 2.2vw;
+    transform: translate(-15%, 0px);
+    left: 25%;
+  }
+  .inf .inc {
+    margin-top: 10%;
+  }
+  .inf .ins {
+    margin-top: 14%;
+    transform: translate(-15%, 0px);
+    left: 30%;
+  }
+  .text .attention {
+    padding: 3.2%;
+    margin-top: 22.5%;
+  }
+  footer {
+    margin-top: -2%;
+  }
+  .link {
+    font-size: 3vw;
+  }
 }
