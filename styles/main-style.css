@@ -384,6 +384,12 @@ footer {
   header {
     display: none;
   }
+  .head {
+    background-size: 0% 1px;
+  }
+  .head:hover {
+    background-size: 100% 1px;
+  }
   #slides .round {
     width: 52vw;
     height: 52vw;
@@ -515,6 +521,12 @@ footer {
   .grid {
     grid-template-rows: 85% 50% 5%;
   }
+  .head {
+    background-size: 0% 1px;
+  }
+  .head:hover {
+    background-size: 100% 1px;
+  }
   .menu-btn {
     width: 5vh;
     height: 5vh;
@@ -538,6 +550,12 @@ footer {
 @media (max-width: 320px) {
   .grid {
     grid-template-rows: 80% 50% 5%;
+  }
+  .head {
+    background-size: 0% 1px;
+  }
+  .head:hover {
+    background-size: 100% 1px;
   }
   .menu-btn {
     width: 6.5vh;
