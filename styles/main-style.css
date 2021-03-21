@@ -392,7 +392,7 @@ footer {
   #slides h1 {
     font-size: 11vw;
     text-align: center;
-    margin-top: 1%;
+    margin-top: 2%;
   }
   #slides h2 {
     position: relative;
@@ -404,20 +404,22 @@ footer {
   }
   #slides h3 {
     font-size: 5.5vw;
-    margin-top: 10%;
   }
   .strelka-bottom {
     width: 15.5%;
     height: 15.5%;
+    margin-top: -10%;
+  }
+  .grid {
+    grid-template-rows: 90% 45% 5%;
   }
   .elem_2 {
-    padding: 0px 35px 0px 35px;
-    /*margin-top: -15%;*/
+    padding: 0px 25px 0px 25px;
   }
   .elem_2 h1 {
     position: relative;
     text-align: center;
-    font-size: 5.54vw;
+    font-size: 5.6vw;
     transform: translate(0px, 0px);
     left: 0%;
   }
@@ -427,8 +429,8 @@ footer {
   }
   .inf {
     padding: 0px 15px 0px 15px;
-    /*margin-bottom: -20%;
-    margin-top: 15%;*/
+    margin-bottom: -20%;
+    margin-top: 15%;
   }
   .inf .inc,
   .inf .ins {
@@ -442,7 +444,7 @@ footer {
     font-size: 3.8vw;
   }
   .text .attention {
-    padding: 5%;
+    padding: 4%;
   }
   .attention .att {
     font-size: 4.5vw;
@@ -457,8 +459,8 @@ footer {
     font-size: 5vw;
   }
   .menu-btn {
-    width: 4vh;
-    height: 4vh;
+    width: 4.5vh;
+    height: 4.5vh;
     margin-left: 6.5%;
     margin-top: 6.5%;
     background-color: #1b1b1b;
@@ -492,15 +494,56 @@ footer {
   .menu-btn span::after {
     transform: translateY(5px);
   }
-
+  .menu-btn_active span {
+    height: 0;
+  }
   .menu-btn_active span:before {
-    transform: rotate(35deg);
-    width: 10px;
-    transform-origin: left bottom;
+    transform: rotate(45deg);
+    /*width: 10px;
+    transform-origin: left bottom;*/
   }
   .menu-btn_active span:after {
-    transform: rotate(-35deg);
-    width: 10px;
-    transform-origin: left top;
+    transform: rotate(-45deg);
+    /*width: 10px;
+    transform-origin: left top;*/
+  }
+  .links {
+    margin-right: 6%;
+  }
+}
+@media (max-width: 414px) {
+  .grid {
+    grid-template-rows: 85% 50% 5%;
+  }
+  .menu-btn {
+    width: 5vh;
+    height: 5vh;
+  }
+  #slides h1 {
+    margin-top: 6.5%;
+  }
+  #slides h2 {
+    top: 62%;
+  }
+  #slides h3 {
+    margin-top: -5%;
+  }
+  .name {
+    font-size: 3.6vw;
+  }
+  .links {
+    margin-right: 8%;
+  }
+}
+@media (max-width: 320px) {
+  .grid {
+    grid-template-rows: 80% 50% 5%;
+  }
+  .menu-btn {
+    width: 6.5vh;
+    height: 6.5vh;
+  }
+  .text .attention {
+    padding: 5%;
   }
 }
