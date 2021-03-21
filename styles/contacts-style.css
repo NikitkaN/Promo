@@ -171,21 +171,23 @@ footer {
 footer p {
   position: absolute;
 }
-/*@media (max-width: 2560px) {
-  .part_2 {
+@media (max-width: 2560px) {
+  /*.part_2 {
     transform: scale(1.4);
     margin-top: 2.5%;
-  }
-  input {
-    width: 10vw;
-  }
+  }*/
   textarea {
-    width: 10vw;
+    height: 2.8vw;
+    font-size: 40pt;
+  }
+  input[type=text], input[type=email], input[type=tel], input[type=submit] {
+    height: 1.5vw;
+    font-size: 24px;
   }
   .button {
     margin-left: 3.35vw;
   }
-}*/
+}
 @media (max-width: 1440px) {
   header {
     width: 50%;

@@ -14,9 +14,11 @@
         <li><a href="about.html" class="head">Обо мне</a></li>
         <li><a href="attain.html" class="head">Навыки и портфолио</a></li>
         <li><a href="contacts.html" class="head">Контакты</a></li>
-      </ul>
-      
+      </ul> 
     </header>
+    <div class="menu-btn" onclick="active()" id="not_blur">
+      <span></span>
+    </div>
     <main class="grid">
       <div class="elem_1">
         <ul id="slides">
@@ -68,17 +70,46 @@
           <a href="https://github.com/NikitkaN/Promo" class="link fab fa-github"></a>
         </div>
       </footer>
+      <div class="modal animate__animated animate__fadeIn animate__slow">
+        <ul class="anim"> 
+          <li><a href="index.html" class="head">Главная</a></li>
+          <li><a href="about.html" class="head">Обо мне</a></li>
+          <li><a href="attain.html" class="head">Навыки и портфолио</a></li>
+          <li><a href="contacts.html" class="head">Контакты</a></li>
+        </ul>
+      </div>
     </main>
     <script src="https://kit.fontawesome.com/8cf19bb3a0.js" crossorigin="anonymous"></script>
     <script>
       let slides = document.querySelectorAll('#slides .slide');
       let currentSlide = 0;
       let slideInterval = setInterval(nextSlide, 4000);
+      let menu_btn = document.querySelector('.menu-btn');
+      let modal = document.querySelector('.modal');
+      let anim = document.querySelector('.anim');
+      /*let flag = 0;*/
 
       function nextSlide() {
           slides[currentSlide].className = 'slide';
           currentSlide = (currentSlide + 1) % slides.length;
           slides[currentSlide].className = 'slide showing';
+      }
+      /*modal.classList.toggle('animate__animated');
+      modal.classList.toggle('animate__slow');*/
+      function active() {
+        menu_btn.classList.toggle('menu-btn_active');
+        /*if (flag == 0) {
+          modal.classList.remove('animate__fadeOut');
+          modal.classList.add('animate__fadeIn');
+          flag = 1;
+        }
+        else if (flag == 1) {
+          modal.classList.remove('animate__fadeIn');
+          modal.classList.add('animate__fadeOut');
+          flag = 0;
+        }*/
+        modal.classList.toggle('on');
+        anim.classList.toggle('opac');
       }
     </script>
   </body>
