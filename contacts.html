@@ -16,7 +16,10 @@
       <li><a href="contacts.html" class="head">Контакты</a></li>
     </ul>
   </header>
-    <div class="elem animate__animated animate__fadeIn animate__slow">
+  <div class="menu-btn" onclick="active()" id="not_blur">
+    <span></span>
+  </div>
+    <main class="animate__animated animate__fadeIn animate__slow">
       <h1 class="middle">СВЯЖИТЕСЬ СО МНОЙ</h1>
       <div class="trait middle"></div>
       <div class="con">
@@ -46,10 +49,29 @@
           </form>
         </div>
       </div>
-    </div>
+    </main>
     <footer class="animate__animated animate__fadeIn animate__slow">
       <p class="name middle">©2020 Никита Николаев</p>
     </footer>
+    <div class="modal animate__animated animate__fadeIn animate__slow">
+      <ul class="anim">
+        <li><a href="index.html" class="head">Главная</a></li>
+        <li><a href="about.html" class="head">Обо мне</a></li>
+        <li><a href="attain.html" class="head">Навыки и портфолио</a></li>
+        <li><a href="contacts.html" class="head">Контакты</a></li>
+      </ul>
+    </div>
   <script src="https://kit.fontawesome.com/8cf19bb3a0.js" crossorigin="anonymous"></script>
+  <script>
+    let menu_btn = document.querySelector('.menu-btn');
+    let modal = document.querySelector('.modal');
+    let anim = document.querySelector('.anim');
+
+    function active() {
+      menu_btn.classList.toggle('menu-btn_active');
+      modal.classList.toggle('on');
+      anim.classList.toggle('opac');
+    }
+  </script>
 </body>
 </html>
