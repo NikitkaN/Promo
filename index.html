@@ -1,100 +1,106 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Николаев Никита</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="styles/main-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  </head>
-  <body>
-    <header class="middle animate__animated animate__fadeIn animate__slow animate__delay-1s">
-      <ul>
+
+<head>
+  <title>Николаев Никита</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="styles/main-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <header class="middle animate__animated animate__fadeIn animate__slow animate__delay-1s">
+    <ul>
+      <li><a href="index.html" class="head">Главная</a></li>
+      <li><a href="about.html" class="head">Обо мне</a></li>
+      <li><a href="attain.html" class="head">Навыки и портфолио</a></li>
+      <li><a href="contacts.html" class="head">Контакты</a></li>
+    </ul>
+  </header>
+  <div class="menu-btn" onclick="active()" id="not_blur">
+    <span></span>
+  </div>
+  <main class="grid">
+    <div class="elem_1">
+      <ul id="slides">
+        <li class="slide showing"></li>
+        <li class="slide"></li>
+        <li class="slide"></li>
+        <div class="round middle animate__animated animate__fadeIn animate__slower"><img src="img/Me.png" alt="Me">
+        </div>
+        <h1 class="middle animate__animated animate__fadeIn animate__slow">Никита Николаев</h1>
+        <h2 class="middle animate__animated animate__fadeIn animate__slow">- Frontend-разработчик -</h2>
+        <h3 class="middle animate__animated animate__fadeIn animate__slow animate__delay-1s">Цель сайта</h3>
+        <a href="#pump">
+          <svg class="strelka-bottom middle animate__animated animate__fadeIn animate__slow animate__delay-1s"
+            viewBox="0 0 154 109">
+            <symbol id="strelka" viewBox="-73.9 -55.3 135.9 85.4">
+              <g>
+                <polygon points="-73.9,29.1 -6,-9.2 61.9,30.1 61.9,14.2 -6,-25.1 -73.9,14.2 "></polygon>
+              </g>
+              <g>
+                <polygon points="-73.9,-1 -6,-39.3 61.9,0 61.9,-16 -6,-55.3 -73.9,-16 "></polygon>
+              </g>
+            </symbol>
+            <use xlink:href="#strelka" width="135.9" height="85.4" id="XMLID_1_" x="-73.9" y="-55.3"
+              transform="matrix(1.007 0 0 -1.007 83.0005 42)"></use>
+          </svg>
+        </a>
+      </ul>
+    </div>
+    <div class="elem_2" id="pump">
+      <h1 class="middle">Почему существует этот сайт?</h1>
+      <div class="trait middle"></div>
+      <div class="text">
+        <div class="inf">
+          <p class="inc middle">На данный момент сайт создан в целях перехода на второй этап конкурса «24bit»</p>
+          <p class="ins middle">Узнать подробности вы можете перейдя по этой <a href="https://nover.ru/contests/24bit"
+              class="head">ссылке</a></p>
+        </div>
+        <div class="attention middle">
+          <p class="att">Внимание!</p>
+          <p>На сайте не работает отправка форм! Перед вами лишь вёрстка с щепоткой JavaScript.</p>
+        </div>
+      </div>
+    </div>
+    <footer class="elem_3">
+      <p class="name">©2020 Никита Николаев</p>
+      <div class="links">
+        <a href="https://vk.com/sparky__sparky__boom__man" class="link fab fa-vk"></a>
+        <a href="#" class="link fab fa-telegram-plane"></a>
+        <a href="https://github.com/NikitkaN/Promo" class="link fab fa-github"></a>
+      </div>
+    </footer>
+    <div class="modal animate__animated animate__fadeIn animate__slow">
+      <ul class="anim">
         <li><a href="index.html" class="head">Главная</a></li>
         <li><a href="about.html" class="head">Обо мне</a></li>
         <li><a href="attain.html" class="head">Навыки и портфолио</a></li>
         <li><a href="contacts.html" class="head">Контакты</a></li>
-      </ul> 
-    </header>
-    <div class="menu-btn" onclick="active()" id="not_blur">
-      <span></span>
+      </ul>
     </div>
-    <main class="grid">
-      <div class="elem_1">
-        <ul id="slides">
-          <li class="slide showing"></li>
-          <li class="slide"></li>
-          <li class="slide"></li>
-          <div class="round middle animate__animated animate__fadeIn animate__slower"><img src="img/Me.png" alt="Me"></div>
-          <h1 class="middle animate__animated animate__fadeIn animate__slow">Никита Николаев</h1>
-          <h2 class="middle animate__animated animate__fadeIn animate__slow">- Frontend-разработчик -</h2>
-          <h3 class="middle animate__animated animate__fadeIn animate__slow animate__delay-1s">Цель сайта</h3>
-          <a href="#pump">
-            <svg class="strelka-bottom middle animate__animated animate__fadeIn animate__slow animate__delay-1s" viewBox="0 0 154 109">
-             <symbol id="strelka" viewBox="-73.9 -55.3 135.9 85.4">
-                <g>
-                  <polygon points="-73.9,29.1 -6,-9.2 61.9,30.1 61.9,14.2 -6,-25.1 -73.9,14.2 "></polygon>
-                </g>
-                <g>
-                  <polygon points="-73.9,-1 -6,-39.3 61.9,0 61.9,-16 -6,-55.3 -73.9,-16 "></polygon>
-                </g>
-              </symbol>
-              <use xlink:href="#strelka" width="135.9" height="85.4" id="XMLID_1_" x="-73.9" y="-55.3"
-                transform="matrix(1.007 0 0 -1.007 83.0005 42)"></use>
-            </svg>
-          </a>
-        </ul>
-      </div>
-      <div class="elem_2" id="pump">
-        <h1 class="middle">Почему существует этот сайт?</h1>
-        <div class="trait middle"></div>
-        <div class="text">
-          <div class="inf">
-            <p class="inc middle">На данный момент сайт создан в целях перехода на второй этап конкурса «24bit»</p>
-            <p class="ins middle">Узнать подробности вы можете перейдя по этой <a href="https://nover.ru/contests/24bit" class="head">ссылке</a></p>
-          </div>
-          <div class="attention middle">
-            <p class="att">Внимание!</p>
-            <p>На сайте не работает отправка форм! Перед вами лишь вёрстка с щепоткой JavaScript.</p>
-          </div>
-        </div>
-      </div>
-      <footer class="elem_3">
-        <p class="name">©2020 Никита Николаев</p>
-        <div class="links"> 
-          <a href="https://vk.com/sparky__sparky__boom__man" class="link fab fa-vk"></a>
-          <a href="#" class="link fab fa-telegram-plane"></a>
-          <a href="https://github.com/NikitkaN/Promo" class="link fab fa-github"></a>
-        </div>
-      </footer>
-      <div class="modal animate__animated animate__fadeIn animate__slow">
-        <ul class="anim"> 
-          <li><a href="index.html" class="head">Главная</a></li>
-          <li><a href="about.html" class="head">Обо мне</a></li>
-          <li><a href="attain.html" class="head">Навыки и портфолио</a></li>
-          <li><a href="contacts.html" class="head">Контакты</a></li>
-        </ul>
-      </div>
-    </main>
-    <script src="https://kit.fontawesome.com/8cf19bb3a0.js" crossorigin="anonymous"></script>
-    <script>
-      let slides = document.querySelectorAll('#slides .slide');
-      let currentSlide = 0;
-      let slideInterval = setInterval(nextSlide, 4000);
-      let menu_btn = document.querySelector('.menu-btn');
-      let modal = document.querySelector('.modal');
-      let anim = document.querySelector('.anim');
+  </main>
+  <script src="https://kit.fontawesome.com/8cf19bb3a0.js" crossorigin="anonymous"></script>
+  <script>
+    let slides = document.querySelectorAll('#slides .slide');
+    let currentSlide = 0;
+    let slideInterval = setInterval(nextSlide, 4000);
+    let menu_btn = document.querySelector('.menu-btn');
+    let modal = document.querySelector('.modal');
+    let anim = document.querySelector('.anim');
 
-      function nextSlide() {
-          slides[currentSlide].className = 'slide';
-          currentSlide = (currentSlide + 1) % slides.length;
-          slides[currentSlide].className = 'slide showing';
-      }
-      function active() {
-        menu_btn.classList.toggle('menu-btn_active');
-        modal.classList.toggle('on');
-        anim.classList.toggle('opac');
-      }
-    </script>
-  </body>
+    function nextSlide() {
+      slides[currentSlide].className = 'slide';
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].className = 'slide showing';
+    }
+    function active() {
+      menu_btn.classList.toggle('menu-btn_active');
+      modal.classList.toggle('on');
+      anim.classList.toggle('opac');
+    }
+  </script>
+</body>
+
 </html>

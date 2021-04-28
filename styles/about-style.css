@@ -388,13 +388,9 @@ footer {
   }
   .menu-btn_active span:before {
     transform: rotate(45deg);
-    /*width: 10px;
-    transform-origin: left bottom;*/
   }
   .menu-btn_active span:after {
     transform: rotate(-45deg);
-    /*width: 10px;
-    transform-origin: left top;*/
   }
   .links {
     margin-right: 6%;
@@ -447,4 +443,13 @@ footer {
   .text_2 {
     padding-top: 140px;
   }
+}
+
+@-moz-document url-prefix() {
+    .elem_1 img {
+      width: 40.5vw;
+    }
+    .elem_2 img {
+      width: 40.5vw;
+    }
 }
