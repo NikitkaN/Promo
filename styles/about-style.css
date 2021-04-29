@@ -446,10 +446,44 @@ footer {
 }
 
 @-moz-document url-prefix() {
+  .elem_1 img {
+    width: 40.5vw;
+  }
+  .elem_2 img {
+    width: 40.5vw;
+  }
+  @media (max-width: 1440px) {
     .elem_1 img {
-      width: 40.5vw;
+      width: 18vw;
     }
     .elem_2 img {
-      width: 40.5vw;
+      width: 18vw;
     }
+  }
+  @media (max-width:768px) {
+    main p {
+      text-align: justify;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .elem_1,
+    .elem_2 {
+      transform: translate(0px, 0px);
+      left: 0%;
+    }
+    .elem_1 img,
+    .elem_2 img {
+      display: none;
+    }
+    .text_1,
+    .text_2 {
+      margin: 0;
+    }
+    .text_1 {
+      margin-top: 8%;
+    }
+    .text_2 {
+      margin-left: 0%;
+    }
+  }
 }

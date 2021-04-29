@@ -563,10 +563,32 @@ footer {
 }
 
 @-moz-document url-prefix() {
+  .elem_2 {
+    margin-top: 1%;
+  }
+  footer {
+    margin-top: 20%;
+  }
+  @media (max-width: 1440px) {
     .elem_2 {
-      margin-top: 1%;
+      margin-top: 2.5%;
     }
     footer {
-      margin-top: 20%;
+      margin-top: 25%;
     }
+  }
+  @media (max-width: 768px) {
+    .elem_2 {
+      margin-top: 2.5%;
+    }
+    .inc {
+      text-align: center;
+    }
+    .inf .ins {
+      margin-top: 17.5%;
+    }
+    footer {
+      margin-top: 45%;
+    }
+  }
 }
